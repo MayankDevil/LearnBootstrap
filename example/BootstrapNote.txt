@@ -1,0 +1,123 @@
+/*
+*   Bootstrap
+*   Classes Learn
+*   Responsibe Teamplate
+*   Example and Test
+*/
+
+MARGIN
+
+.m-*        # set auto margin 0-5
+.ml-*       # left
+.mr-*       # right
+.mt-*       # top
+.mb-*       # bottom
+.m-size-*
+.mx-*       # top-bottom
+.my-*       # left-right
+
+PADDING
+
+.p-*        # set auto padding 0-5
+.pl-*       # left
+.pr-*       # right
+.pt-*       # top
+.pb-*       # bottom
+.p-size-*
+.px-*       # top-bottom
+.py-*       # left-right
+
+WIDTH
+
+.w-*         # set width 0-5 | auto
+.mw-*        # maximum
+.vw-*        # viewport
+.min-vw-*    # 
+.w-size-*
+
+HEIGHT
+
+.h-*         # set height 0-5 | auto
+.hw-*        # maximum
+.vh-*        # viewport
+.min-hw-*    # 
+.h-size-*
+
+Frame
+
+.container          # page center frame with both side equal margin
+.container-fluid    # cover frame
+
+ROW
+
+.row                    # set row element inside
+.col-size-*             # set equal 12-columns inside row
+.offset-size-*          # set before blank col
+.order-size-first       # set order first in col 
+.order-size-last        # set order last in col 
+
+HEADING & TITLE
+
+.display-*          # display set special font 1 to 4
+.lead               # leading title 
+.h*                 # heading class 1-6
+
+BLOCKQOUTE
+
+.blockquote         # quote for block 
+.blockquote-footer  # use to set footer in qoute
+
+TEXT & FONT
+
+.text-{ left | center | right | justify }
+.text-{ lowercase | uppercase | capitalize }
+.font-italic
+.font-weight-{ bold | light | normal }
+.text-{ sansserif & monospace }
+.text-decoration-none
+.text-{ nowrap | truncate | break }
+
+TEXT COLOUR
+
+
+--blue: #007bff;
+--indigo: #6610f2;
+--purple: #6f42c1;
+--pink: #e83e8c;
+--red: #dc3545;
+--orange: #fd7e14;
+--yellow: #ffc107;
+--green: #28a745;
+--teal: #20c997;
+--cyan: #17a2b8;
+--white: #fff;
+--gray: #6c757d;
+--gray-dark: #343a40;
+
+.text-primary
+.text-secondary
+.text-success
+.text-danger
+.text-warning
+.text-info
+.text-light
+.text-dark
+.text-white
+.text-body
+.text-muted
+.text-white-50
+.text-black-50
+
+BACKGROUND COLOUR
+
+.bg-primary
+.bg-secondary
+.bg-success
+.bg-danger
+.bg-warning
+.bg-info
+.bg-light
+.bg-dark
+.bg-white
+.bg-transparent
+

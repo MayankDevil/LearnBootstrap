@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayank</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link  rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+</head>
+<body class="">
+
+    <div class="container-fluid">
+
+        <div class="w-50 mx-auto my-5 d-md-block d-inline bg-light p-2">
+            
+            <div class="h2 p-2"> Sign In Form </div>
+
+            <div class="p-3 text-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus, labore ex nulla natus delectus iusto mollitia ab ducimus totam atque possimus aliquam voluptatum accusamus laborum sunt fuga assumenda aperiam. </div>
+            
+            <form class="px-lg-5 px-md-3 px-0">
+                <!-- username -->
+                <div class="form-group py-3">
+                    <!-- text field -->
+                    <input type="text" name="username" id="sign_username_field" placeholder="Enter Username" class="form-control">
+                    <!-- username feedback -->
+                    <div id="sign_username_feedback" class=""></div>
+
+                </div>
+                <!-- password -->
+                <div class="form-group py-3 ">
+                    <!-- password field -->
+                    <input type="password" name="password" id="sign_password_field" placeholder="Enter Password" class="form-control">
+                    <!-- password feedback -->
+                    <div id="sign_password_feedback" class=""></div>
+
+                </div>
+                <!-- submit & reset button -->
+                <div class="py-3">
+                    <!-- submit buttom -->
+                    <input type="submit" value="Sign In" id="sing_submit_button" class="btn btn-info px-5 py-2">
+                    <!-- reset button -->
+                    <input type="reset" value="Clear" id="" class="btn btn-outline-info  px-5 py-2">
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+    <!-- my script to form validation -->
+    <script>
+
+        let sign_username_field = document.getElementById('sign_username_field');
+
+        let sign_password_field = document.getElementById('sign_password_field');
+
+        let sign_username_feedback = document.getElementById('sign_username_feedback');
+
+        let sign_password_feedback = document.getElementById('sign_password_feedback');
+
+        sign_username_field.addEventListener('blur',function()
+        {
+            if(sign_username_field.value == 'mayank' || sign_username_field.value == ' ')
+            {
+                sign_username_field.classList.add('is-valid');
+                sign_username_feedback.classList.add('valid-feedback');
+                sign_username_feedback.innerText = "Username Matched";
+            }
+            else
+            {
+                sign_username_field.classList.add('is-invalid');
+                sign_username_feedback.classList.add('invalid-feedback');
+                sign_username_feedback.innerText = "Username Unmatched";
+            }
+        });
+
+        sign_password_field.addEventListener('blur',function()
+        {
+            if(sign_password_field.value == '1234' && sign_password_field.value == ' ')
+            {
+                sign_password_field.classList.add('is-valid');
+                sign_password_feedback.classList.add('valid-feedback');
+                sign_password_feedback.innerText = "Password Matched";
+            }
+            else
+            {
+                sign_password_field.classList.add('is-invalid');
+                sign_password_feedback.classList.add('invalid-feedback');
+                sign_password_feedback.innerText = "Username Unmatched";
+            }
+        });
+
+    </script>
+
+</body>
+</html>
