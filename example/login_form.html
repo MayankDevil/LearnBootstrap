@@ -3,7 +3,7 @@
 -   Bootstrap
 -   https://github.com/MayankDevil/
 -   Developed by Mayank
--   HTML : ./layout.html
+-   HTML : ./example/login_form.html
 -->
 <html lang="en">
 
@@ -22,35 +22,56 @@
 
     <div class="container-fluid pt-lg-5 pt-md-3 pt-1">
 
-        <form class="p-3 border rounded">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-lg-4 col-md-6 col-sm-8 col-12">
+
+                <form class="p-3 border rounded">
         
-            <div class="h4 py-3"> SignIn Form </div>
-            <!-- username -->
-            <div class="form-group py-3">
-                <!-- text field -->
-                <input type="text" name="username" id="sign_username_field" placeholder="Enter Username" class="form-control">
-                <!-- username feedback -->
-                <div id="sign_username_feedback" class=""></div>
+                    <div class="h4 py-3"> SignIn Form </div>
+                    
+                    <!-- username -->
+                    <div class="form-floating mb-3">
+                        <!-- text field -->
+                        <input type="text" name="username" id="sign_username_field" placeholder="Enter Username" class="form-control">
+                        
+                        <label for="sign_username_field"> Email/Username </label>
+
+                        <!-- username feedback -->
+                        <div id="sign_username_feedback" class=""></div>
+        
+                    </div>
+                    <!-- password -->
+                    <div class="form-floating mb-3">
+                        <!-- password field -->
+                        <input type="password" name="password" id="sign_password_field" placeholder="Enter Password" class="form-control">
+                        
+                        <label for="sign_password_field"> Password </label>
+                        
+                        <!-- password feedback -->
+                        <div id="sign_password_feedback" class=""></div>
+        
+                    </div>
+                    <!-- submit & reset button -->
+                    <div class="row">
+                        <!-- submit buttom -->
+                        <div class="col-md-6 col-100">
+                            <input type="submit" value="Sign In" id="sing_submit_button" class="btn btn-info px-5 py-2 w-100">
+                        </div>
+                        <!-- forget button -->
+                        <div class="col py-3 text-end">
+                            <a href="" class="btn btn-link text-decoration-none"> forget password? </a>
+                        </div>
+                    
+                    </div>
+        
+                </form>
 
             </div>
-            <!-- password -->
-            <div class="form-group py-3">
-                <!-- password field -->
-                <input type="password" name="password" id="sign_password_field" placeholder="Enter Password" class="form-control">
-                <!-- password feedback -->
-                <div id="sign_password_feedback" class=""></div>
+            <div class="col"></div>
+        </div>
 
-            </div>
-            <!-- submit & reset button -->
-            <div class="py-3 d-flex justify-content-between">
-                <!-- submit buttom -->
-                <input type="submit" value="Sign In" id="sing_submit_button" class="btn btn-info px-5 py-2">
-                <!-- forget button -->
-                <a href="btn btn-link"> forget password? </a>
-            
-            </div>
-
-        </form>
+        
 
     </div>
 
