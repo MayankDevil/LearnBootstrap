@@ -14,7 +14,8 @@
     <title>MayankDevil</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="min/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
 
     <!-- style : overwrite -->
     <style>
@@ -44,35 +45,48 @@
 
           <div class="offcanvas-body">
 
-            <a href="example/" class="d-block text-decoration-none py-2"> example </a>
+            <script>
 
-            <a href="example/layout1.html" class="d-block text-decoration-none py-2"> layout : heading with three slice </a>
+              contentData = [
+                "normal_content",
+                "layout1",
+                "progress",
+                "message_form",
+                "login_form",
+                "singin_form",
+                "normal_table"
+              ].forEach((content) => {
+                
+                document.write(`
+                  <div class="d-flex aling-items-center justify-content-between py-1">  
+                    <a href="example/${content}.html" class="d-block text-decoration-none py-2"> ${content} </a>
+                    <a href="example/${content}.html" download="${content}" class="bi bi-download">  </a>
+                  </div>
+                `)
+              })
 
-            <a href="example/progress.html" class="d-block text-decoration-none py-2"> progress-bar </a>
-
-            <a href="example/message_form.html" class="d-block text-decoration-none py-2"> message form </a>
-
-            <a href="example/login_form.html" class="d-block text-decoration-none py-2"> login form </a>
-
-            <a href="example/singin_form.html" class="d-block text-decoration-none py-2"> singin form </a>
+            </script>
 
           </div>
         
         </div>
         <!--  -->
 
-        <div class="h1 py-5"> LearnBootstrap </div>
+        <div class="h1 py-5"> <span class="bi bi-bootstrap"></span> LearnBootstrap </div>
 
         <div class=""> Bootstrap is an open-source front-end framework by Twitter, simplifying we developement with pre-styled components, a responsive grid system, and JavaScript plugins, It ensure consistent, mobile-friendly designs, making it a poupular choice for developer. </div>
 
 
-        <div class="h4 my-3"> Online Bootstrap { CSS | JS } URL </div>        
+        <div class="h4 my-3"> Online Bootstrap { CSS | JS } URL </div>
 
         <a href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" class="alert alert-info d-block">https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css</a>
         
         <a href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" class="alert alert-info d-block">https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js</a>
 
+        <!-- ( download bootstrap ) -->
+
         <a href="https://getbootstrap.com/docs/5.0/getting-started/download/" id="" class="btn btn-outline-danger my-5"> Download Bootstrap </a> 
+
 
         <div class="alert alert-warning"> This website uses Bootstrap, a popular open-source framework for building responsive, mobile-first websites. Bootstrap is released under the MIT license and is copyright 2021 Twitter[^1^][1]. We do not claim any ownership over Bootstrap or its associated trademarks. We use Bootstrap solely for the purpose of developing our website and do not intend to infringe upon any intellectual property rights. If you have any questions or concerns, please contact us at [ https://www.linkedin.com/in/MasterMayank ]. </div>
 
@@ -81,7 +95,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="min/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     
 </body>
 
