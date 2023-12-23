@@ -54,13 +54,14 @@
                 "message_form",
                 "login_form",
                 "singin_form",
-                "normal_table"
+                "normal_table",
+                "navbar"
               ].forEach((content) => {
                 
                 document.write(`
                   <div class="d-flex aling-items-center justify-content-between py-1">  
                     <a href="example/${content}.html" class="d-block text-decoration-none py-2"> ${content} </a>
-                    <a href="example/${content}.html" download="${content}" class="bi bi-download">  </a>
+                    <a href="example/${content}.html" download class="bi bi-download text-dark"></a>
                   </div>
                 `)
               })
