@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+-   Bootstrap
+-   https://github.com/MayankDevil/
+-   Developed by Mayank
+-   HTML : ./example/person_detail.html
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MayankDevil</title>
+
+    <!-- bootstrap css -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="container">
+
+            <!-- { peron detail start } -->
+            <div class="row p-3 border">
+                <!-- ( picture ) -->
+                <div class="col-md-6 col-12">
+                    <img src="../data/p12.jpg" alt="person" class="image-fluid w-100 rounded">
+                </div>
+                <!-- ( detail ) -->
+                <div class="col-md-6 col-12">
+                    <div class="list-group">
+
+                        <div class="h4 py-3 text-body"> Scarlit Scandal </div>
+
+                        <script>
+                            
+                            scarlit_scandal = {
+                                'Date of Birth' : `27thApril,1999`,
+                                'Language' : `English | French`,
+                                'Nationality' : `American`,
+                                'Religion' : `Christian`,
+                                'Height' : `5 ft 1 in`,
+                                'Weight' : `45-50 kg`,
+                                'Body' : `32-24-32`,
+                                'Eye Colour' : `Dark Brown`,
+                                'Hair Colour' : `Black`,
+                                'Married Status' : `Single`,
+                                'Does Smoke' : `Yes`,
+                                'Does Drik Alcohol' : `Yes`,
+                                'Profile' : null
+                            }
+                            /*
+                                --------------------------------------------------------
+                                [ object value traversal ]  for in loop key or property
+                                --------------------------------------------------------
+                            */ 
+                            for (var key in scarlit_scandal)
+                            {
+                                if (scarlit_scandal[key] != null)
+                                {
+                                    document.write(`<div class="list-group-item my-1 d-flex justify-content-between">
+                                        <div class="text-secondary">${key}</div>
+                                        <div class="text-decoration-none text-dark">${scarlit_scandal[key]}</div>
+                                    </div>`)
+                                }
+                            }   
+
+                        </script>
+                    
+                    </div>
+                </div>
+
+            </div>
+            <!-- { peron detail end } -->
+
+        </div>
+    </div>
+
+    <!-- bootstrap js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="../js/bootstrap.bundle.min.js"></script> -->
+    
+</body>
+
+</html>
+<!-- the end -->
+        
