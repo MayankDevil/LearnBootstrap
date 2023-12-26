@@ -27,41 +27,69 @@
         <div class="container">
             
             <!-- { layout 1 start } -->
-            <div class="row my-2 border rounded">
-                <!-- ( prime ) -->
-                <div class="col-lg-6 col-12 order-lg-first order-md-last order-first d-flex align-items-center">
+            <div class="row">
 
-                    <div class="display-4 my-5"> Welcome back to some Beautiful Movements! </div>
+                <div class="col-1">
 
+                    <div class="row" id="imagelist">
+                        <!-- 1 -->
+                        <div class="col-12 p-1 border">
+                            <img src="../data/p11.jpg" alt="" class="img-fluid rounded">
+                        </div>
+                        <!-- 2 -->
+                        <div class="col-12 p-1 border">
+                            <img src="../data/p12.jpg" alt="" class="img-fluid rounded">
+                        </div>
+                        <!-- 3 -->
+                        <div class="col-12 p-1 border">
+                            <img src="../data/p11.jpg" alt="" class="img-fluid rounded">
+                        </div>
+                        <!-- 4 -->
+                        <div class="col-12 p-1 border">
+                            <img src="../data/n13.jpg" alt="" class="img-fluid rounded">
+                        </div>
+                        <!-- 5 -->
+                        <div class="col-12 p-1 border">
+                            <img src="../data/p11.jpg" alt="" class="img-fluid rounded">
+                        </div>
+                        <!-- 6 -->
+                        <div class="col-12 p-1 border">
+                            <img src="../data/n13.jpg" alt="" class="img-fluid rounded">
+                        </div>
+                    </div>
+                
                 </div>
-                <!-- ( second ) -->
-                <div class="col-lg-6 col-12">
-                    <div class="row">
+                
+                <div class="col"></div>
 
-                        <!-- <div class="col"></div> -->
-
-                        <div class="col-md-3 col-6 p-2">
-                            <img src="../data/p11.jpg" alt="" class="image-fluid w-100 rounded">
-                        </div>
-                        
-                        <div class="col-md-9 col-12 p-2">
-                            <img src="../data/n1.jpg" alt="" class="image-fluid w-100 rounded">
-                        </div>
-
-                        <div class="col-md-3 col-auto"></div>
-                        
-                        <div class="col-md-5 p-2">
-                            <img src="../data/w10.jpg" alt="" class="image-fluid w-100 rounded">
-                        </div>
-                        
-                        <div class="col-md-4 col-6 p-2 order-md-last order-first">
-                            <img src="../data/p12.jpg" alt="" class="image-fluid w-100 rounded">
-                        </div>
-
-                    </div>    
-                </div>
+                <div class="col-10 p-3">
                     
+                    <script>
+
+                        let all_image = document.querySelectorAll("#imagelist .img-fluid")
+                        
+                        var image_path = `../data/n13.jpg`
+
+                        for (let i = 0; i < all_image.length; i++)
+                        {
+                            // console.log(all_image[i].src)
+
+                            all_image[i].onclick = function()
+                            {
+                                // alert('done')
+                                image_path = all_image[i].src
+                                
+                            }
+                        }
+                        
+                        document.write(`<img src='${image_path}' class='img-fluid rounded h-100'>`)
+
+                        
+                    </script>
+                
+                </div>
             </div>
+            
             <!-- { layout 1 end } -->
 
         </div>

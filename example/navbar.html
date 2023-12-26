@@ -23,63 +23,124 @@
 
 <body>
 
-  <!--
-    -----------------
-    | navbar simple |
-    -----------------
-  -->
-
-  <nav class="navbar navbar-expand-md bg-body-tertiary d-none">
-    <div class="container-fluid">
-      <!-- ( brand name ) -->
-      <a class="navbar-brand" href="#">BrandName</a>
-      <!-- ( toggle menu button ) -->
-      <div class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </div>
-      <!-- ( nav ) -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        
-        <div class="navbar-nav">
-
-          <div class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Home</a> </div>
-          <div class="nav-item"> <a class="nav-link" href="#">Contact</a> </div>
-          <div class="nav-item"> <a class="nav-link" href="#">About</a> </div>
-          <div class="nav-item"> <a class="nav-link" href="#">Service</a> </div>
-        
+  <div class="w-100">
+    <!--
+      -------------------------------
+      | navbar login with nav links |
+      -------------------------------
+    -->
+    <div class="navbar navbar-expand-md bg-warning bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- ( brandname ) -->
+        <a class="navbar-brand" href="#">BrandName</a>
+        <!-- ( toggle button ) -->
+        <div class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </div>
+        <!-- (navbar) -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav w-auto mx-auto">
+          
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          
+            <a class="nav-link" href="#">About</a>
+          
+            <a class="nav-link" href="#">Service</a>
 
-        <!-- ( login )
-          <div class="nav-item">
-            <a class="nav-link btn btn-outlin-dark p-2 disabled" aria-disabled="true">Login</a>
+            <a class="nav-link" href="#">Contact</a>
+
           </div>
-        -->
+
+          <a class="btn btn-dark p-2" href="#">Login</a>
+        </div>
       
       </div>
-    
     </div>
-  </nav>
+    <!-- { navbar end } -->
 
-  <!-- ( nav ) -->
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <div class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <div class="m-5"></div>
+
+
+    <!--
+      -----------------
+      | navbar simple |
+      -----------------
+    -->
+    <div class="navbar navbar-expand-md bg-body-tertiary border">
+      <div class="container">
+        <!-- ( brandname ) -->
+        <a class="navbar-brand" href="#">WebsiteName</a>
+        <!-- ( toggle button ) -->
+        <div class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </div>
+        <!-- (navbar) -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+          
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          
+            <a class="nav-link" href="#">About</a>
+          
+            <a class="nav-link" href="#">Service</a>
+
+            <a class="nav-link" href="#">Contact</a>
+            
+            <a class="nav-link disabled" href="#">Login</a>
+
+          </div>
+        </div>
+      
       </div>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Pricing</a>
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+    </div>
+    <!-- { navbar end } -->
+
+
+    <div class="m-5"></div>
+
+
+    <!--
+      --------------------------
+      | navbar with serach bar |
+      --------------------------
+    -->
+    <div class="navbar">
+      <div class="container">
+        <div class="row border py-2 w-100">
+          <!-- ( brandname ) -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-4">
+            <a class="navbar-brand d-block" href="#">CompnayName</a>
+          </div>
+
+          <!-- links -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-8 order-md-last">
+            <div class="d-flex align-items-center justify-content-end">
+
+              <a class="text-dark text-decoration-none px-3" href="#"> <span class="bi bi-book"></span> About</a>
+
+              <a class="btn btn-primary" href="#"> <span class="bi bi-person"></span> Login</a>
+
+            </div>
+          </div>
+
+          <!-- (serach bar) -->
+          <div class="col-lg-6 col-md-4 col-12">
+            <form action="#" class="btn-group w-100 border border-primary mt-md-0 mt-3">
+
+              <input type="serach" class="btn form-control" placeholder="Search Data ...">
+
+              <button class="btn btn-primary"> <span class="bi bi-search"></span> </button>
+
+            </form>
+          </div>
+        
         </div>
       </div>
     </div>
-  </nav>
+    <!-- { navbar end } -->
 
-
+  </div>
 
   <!-- bootstrap js -->
 
