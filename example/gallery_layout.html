@@ -26,71 +26,44 @@
     <div class="container-fluid vh-100">
         <div class="container">
             
-            <!-- { layout 1 start } -->
-            <div class="row">
+            <!-- { gallery layout start } -->
+            <div class="row d-flex align-items-start my-2">
 
-                <div class="col-1">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 p-1 border">
+                    <img src="../data/p11.jpg" alt="" class="img-fluid">
+                </div>
 
-                    <div class="row" id="imagelist">
-                        <!-- 1 -->
-                        <div class="col-12 p-1 border">
-                            <img src="../data/p11.jpg" alt="" class="img-fluid rounded">
-                        </div>
-                        <!-- 2 -->
-                        <div class="col-12 p-1 border">
-                            <img src="../data/p12.jpg" alt="" class="img-fluid rounded">
-                        </div>
-                        <!-- 3 -->
-                        <div class="col-12 p-1 border">
-                            <img src="../data/p11.jpg" alt="" class="img-fluid rounded">
-                        </div>
-                        <!-- 4 -->
-                        <div class="col-12 p-1 border">
-                            <img src="../data/n13.jpg" alt="" class="img-fluid rounded">
-                        </div>
-                        <!-- 5 -->
-                        <div class="col-12 p-1 border">
-                            <img src="../data/p11.jpg" alt="" class="img-fluid rounded">
-                        </div>
-                        <!-- 6 -->
-                        <div class="col-12 p-1 border">
-                            <img src="../data/n13.jpg" alt="" class="img-fluid rounded">
-                        </div>
-                    </div>
-                
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 p-1 border">
+                    <img src="../data/p12.jpg" alt="" class="img-fluid">
                 </div>
                 
-                <div class="col"></div>
-
-                <div class="col-10 p-3">
-                    
-                    <script>
-
-                        let all_image = document.querySelectorAll("#imagelist .img-fluid")
-                        
-                        var image_path = `../data/n13.jpg`
-
-                        for (let i = 0; i < all_image.length; i++)
-                        {
-                            // console.log(all_image[i].src)
-
-                            all_image[i].onclick = function()
-                            {
-                                // alert('done')
-                                image_path = all_image[i].src
-                                
-                            }
-                        }
-                        
-                        document.write(`<img src='${image_path}' class='img-fluid rounded h-100'>`)
-
-                        
-                    </script>
-                
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 p-1 border">
+                    <img src="../data/p13.jpg" alt="" class="img-fluid">
                 </div>
+                
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 p-1 border">
+                    <img src="../data/p11.jpg" alt="" class="img-fluid">
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 p-1 border">
+                    <img src="../data/p12.jpg" alt="" class="img-fluid">
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 p-1 border">
+                    <img src="../data/p13.jpg" alt="" class="img-fluid">
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 p-1 border">
+                    <img src="../data/p11.jpg" alt="" class="img-fluid">
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 p-1 border">
+                    <img src="../data/p13.jpg" alt="" class="img-fluid">
+                </div>
+               
             </div>
             
-            <!-- { layout 1 end } -->
+            <!-- { gallery layout end } -->
 
         </div>
     </div>
