@@ -1,6 +1,6 @@
 # 🚀 framework
 
-#### this repository is collection of Bootstrap based components that prsent my hard work
+#### LearnBootstrap is a website that offers a comprehensive collection of Bootstrap frameworks designed by Mayank. These frameworks are designed to help developers create responsive and visually appealing websites with ease. I am grateful using Bootstrap that enhance my productivity.
 
 ## 🛠 TechStack
 
