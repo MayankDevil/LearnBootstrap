@@ -22,9 +22,8 @@
     <!-- style : overwrite -->
     <style>
 
-      a:hover {
-        text-decoration: underline !important;
-        color:var(--bs-dark);
+      a:first-child:hover {
+        color:var(--bs-blue) !important;
       }
 
     </style>
@@ -71,8 +70,8 @@
                 
                 document.write(`
                   <div class="d-flex aling-items-center justify-content-between py-1">  
-                    <a href="example/${content}.html" class="d-block text-decoration-none py-2"> ${content} </a>
-                    <a href="example/${content}.html" download class="bi bi-download text-dark"></a>
+                    <a href="example/${content}.html" class="d-block text-secondary text-decoration-none py-1"> ${content} </a>
+                    <a href="example/${content}.html" download class="bi bi-download text-light bg-dark p-2 d-inline-block rounded"></a>
                   </div>
                 `)
               })
@@ -84,7 +83,7 @@
         </div>
         <!-- { offcanvas end } -->
 
-        <div class="display-5 py-5"> <span class="bi bi-bootstrap"></span> LearnBootstrap </div>
+        <div class="display-5 py-5">  <span class="bi bi-bootstrap"></span>LearnBootstrap </div>
 
         <div class="lead mb-5"> LearnBootstrap is a website that offers a comprehensive collection of Bootstrap frameworks designed by Mayank. These frameworks are designed to help developers create responsive and visually appealing websites with ease. I am grateful using Bootstrap that enhance my productivity. </div>
 
